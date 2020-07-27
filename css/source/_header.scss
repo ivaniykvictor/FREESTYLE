@@ -1,0 +1,170 @@
+$mainfont: 'Proxima Nova', sans-serif;
+$background: #f7f7f7;
+$color-text: #222222;
+@mixin text {
+    font-family: $mainfont;
+    color: $color-text;
+    text-transform: uppercase;
+}
+
+@mixin social {
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    text-align: center;
+    color: white;
+
+    &:hover{
+        background-color: #104690;
+    }
+}
+
+.header{
+    background-color: $background;
+    padding: 0 20px;
+
+
+    @media screen and (max-width: 480px){
+        height: 35px;
+    }
+
+    @media screen and (min-width: 650px){
+        height: 85px;
+    }
+    
+    &__nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__logo{
+        @include text;
+        font-weight: 800;
+        font-size: 20px;
+        position: relative;
+        margin-top: -5px;
+
+        @media screen and (min-width: 650px){
+            font-size: 40px;
+        }
+
+        &::before{
+            content: 'freestyle';
+            position: absolute;
+            font-weight: 600;
+            padding-top: 20px;
+            font-size: 10px;
+
+            @media screen and (min-width: 650px){
+                font-size: 21px;
+                padding-top: 45px;
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+
+        @media screen and (max-width: 480px){
+            display: none;
+        }
+
+        @media screen and (min-width: 650px){
+            padding-top: 15px;
+        }
+    }
+
+    &__link{
+        @include text;
+        font-size: 10px;
+        padding-left: 10px;
+        position: relative;
+
+        @media screen and (min-width: 650px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1025px){
+            padding-left: 20px;
+        }
+    }
+
+    &__adaptive-menu{
+        display: none;
+        cursor: pointer;
+        border: solid 1px transparent;
+        border-radius: 7px;
+        transition: all 600ms;
+
+        i {
+            font-size: 20px;
+            color: $color-text;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    
+        @media screen and (max-width: 480px){
+            display: block;
+        }
+    }
+}
+
+.social{
+    @include social;
+    width: 18px;
+    height: 15px;
+    padding-top: 3px;
+
+    @media screen and (min-width: 650px){
+        width: 25px;
+        height: 21px;
+        font-size: 15px;
+        padding-top: 4px;
+    }
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    background-color: $background;
+    box-shadow: 0px 17px 24px 0 rgba(0, 0, 0, 0.14);
+    z-index: 100;
+
+    &__close {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+        i{
+            font-size: 15px;
+        }
+    }
+
+    &__item{
+        display: flex;
+    }
+
+    &__link{
+       @include text;
+       font-size: 12px;
+    }
+
+    &__social{
+        @include social;
+        width: 25px;
+        height: 20px;
+        padding-top: 4px;
+        margin-right: 5px;
+    }
+}

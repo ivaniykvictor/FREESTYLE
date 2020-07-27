@@ -1,0 +1,62 @@
+$mainfont: 'Proxima Nova', sans-serif;
+
+@mixin text-baner {
+    font-family: $mainfont;
+    color: #ffff;
+}
+
+.baner{
+    // position: relative;
+    // min-height: 150px;
+    // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../image/Picture1.png);
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+
+    // &::before{
+    //     position: absolute;
+    //     content: "";
+    //     background-color: #1f1f1f;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     max-height: 160px;
+    //     // z-index: 1;
+    //     opacity: .6;
+    // }
+
+    &__fon{
+        position: relative;
+
+        &::before{
+                position: absolute;
+                content: "";
+                background-color: #1f1f1f;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                // z-index: 1;
+                opacity: .6;
+            }
+    }
+
+    &__container{
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+    }
+
+    &__title{
+        @include text-baner();
+        font-size: 15px;
+    }
+
+    &__text{
+        @include text-baner;
+        font-size: 12px;
+        font-weight: 100;
+    }
+}
