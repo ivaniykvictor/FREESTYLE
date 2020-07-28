@@ -1,0 +1,90 @@
+$mainfont: 'Proxima Nova', sans-serif;
+
+@mixin text-banner {
+    font-family: $mainfont;
+    color: #ffff;
+}
+
+.banner{
+
+    &__fon{
+        position: relative;
+
+        &::before{
+                position: absolute;
+                content: "";
+                background-color: #293239;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: .8;
+                height: calc(100% - 4px);
+            }
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__container{
+        width: 38%;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(0, -50%);
+
+        @media screen and (min-width: 530px){
+            width: 32%;
+        }
+    }
+
+    &__title{
+        @include text-banner;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 376px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 530px){
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: 750px){
+            font-size: 17px;
+        }
+
+        @media screen and (min-width: 830px){
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-size: 25px;
+        }
+    }
+
+    &__text{
+        @include text-banner;
+        font-size: 8px;
+        font-weight: 300;
+
+        @media screen and (min-width: 376px){
+            font-size: 9px;
+        }
+
+        @media screen and (min-width: 530px){
+            font-size: 10px;
+        }
+
+        @media screen and (min-width: 750px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 830px){
+            font-size: 15px;
+        }
+    }
+}
