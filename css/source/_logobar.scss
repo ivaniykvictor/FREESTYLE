@@ -1,0 +1,12 @@
+.logobar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #313f4a;
+    padding: 10px 0;
+    margin-top: -4px;
+    align-items: center;
+
+    &__img{
+        width: 15%;
+    }
+}
