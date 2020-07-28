@@ -15,6 +15,10 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  p {
+      margin: 0;
+  }
   
   hr {
     box-sizing: content-box;
@@ -29,7 +33,6 @@ html {
 
   ul{
     list-style: none;
-    /* padding: 0; */
   }
   
   a {
