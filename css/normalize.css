@@ -11,7 +11,7 @@ html {
     display: block;
   }
   
-  h1,h2 {
+  h1,h2,h3,h4 {
     margin: 0;
     padding: 0;
   }
@@ -87,7 +87,6 @@ html {
   optgroup,
   select,
   textarea {
-    font-family: inherit; 
     font-size: 100%;
     line-height: 1.15;
     margin: 0; 
