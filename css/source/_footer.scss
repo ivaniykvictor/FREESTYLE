@@ -1,0 +1,180 @@
+$mainfont: 'Proxima Nova', sans-serif;
+
+@mixin input {
+    width: 100%;
+    font-family: $mainfont;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 3px 0 3px 5px;
+
+    @media screen and (min-width: 760px){
+        padding: 10px 0 10px 8px;
+    }
+
+    @media screen and (min-width: 1024px){
+        font-size: 15px;
+    }
+}
+
+.footer{
+    background-color: #333a40;
+
+    &__container{
+        padding: 20px 0 10px 10px;
+        display: flex;
+
+        @media screen and (min-width: 760px){
+            padding: 30px 0 10px 30px;
+        }
+
+        @media screen and (min-width: 1200px){
+            padding: 30px 0 10px 40px;
+        }
+    }
+
+    &__block{
+        width: 25%;
+    }
+
+    &__block-navigation{
+        width: 25%;
+        margin-left: 12px;
+    }
+
+    &__block-submit{
+        width: 43%;
+        position: relative;
+
+        @media screen and (min-width: 760px){
+            width: 35%;
+        }
+    }
+
+    &__title{
+        font: {
+            family: $mainfont;
+            size: 8px;
+            weight: 400;
+        }
+        color: white;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 425px){
+            font-size: 10px;
+        }
+
+        @media screen and (min-width: 760px){
+            font-size: 13px;
+        }
+
+        @media screen and (min-width: 1024px){
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: 1400px){
+            font-size: 20px;
+        }
+    }
+
+    &__text{
+        font: {
+            family: $mainfont;
+            size: 7px;
+        }
+        color: #8f8f8f;
+
+        @media screen and (min-width: 425px){
+            font-size: 9px;
+        }
+
+        @media screen and (min-width: 760px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1024px){
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 1400px){
+            font-size: 16px;
+        }
+    }
+
+    &__item{
+        padding: 0;
+        line-height: 5px;
+
+        @media screen and (min-width: 425px){
+            line-height: 7px;
+        }
+
+        @media screen and (min-width: 760px){
+            line-height: 12px;
+        }
+
+        @media screen and (min-width: 1024px){
+            line-height: 15px;
+        }
+
+        @media screen and (min-width: 1400px){
+            line-height: 20px;
+        }
+    }
+
+    &__input{
+        @include input;
+        margin-top: 10px;
+    }
+
+    &__input-email{
+        @include input;
+        margin-top: 3px;
+    }
+
+    &__button{
+        font-family: $mainfont;
+        font-size: 10px;
+        font-weight: 300;
+        background-color: #4c7ca5;
+        color: white;
+        margin: 10px 0 15px 0;
+        border: solid transparent;
+        border-radius: 1px;
+        position: relative;
+        left: 100%;
+        transform: translate(-85%);
+
+        @media screen and (min-width: 760px){
+            font-size: 11px;
+            padding: 5px 20px;
+        }
+
+        @media screen and (min-width: 768px){
+            margin: 10px 0 40px 0;
+        }
+
+        @media screen and (min-width: 1024px){
+            font-size: 15px;
+        }
+    }
+
+    &__copyright{
+        padding: 10px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: calc(100% - 20px);
+            background-color: #8f8f8f;
+            margin-top: -12px;
+        }
+    }
+}
+
+.tel{
+    padding-top: 10px;
+}
+
+

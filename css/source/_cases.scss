@@ -1,0 +1,269 @@
+$mainfont: 'Proxima Nova', sans-serif;
+@mixin margin-block {
+    margin: 30px 10px 0 10px;
+}
+
+@mixin title-cases {
+    font: {
+        family: $mainfont;
+        size: 10px;
+        weight: 400;
+    }
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+.cases{
+    @include margin-block;
+    
+    @media screen and (min-width: 470px){
+        margin: 30px 15px 0 15px;
+    }
+
+    @media screen and (min-width: 760px){
+        margin: 30px 20px 0 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin: 30px 20px 0 40px;
+    }
+
+    &__title{
+        @include title-cases;
+
+        @media screen and (min-width: 376px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 470px){
+            font-size: 16px;
+            margin-top: 65px;
+        }
+
+        @media screen and (min-width: 850px){
+            font-size: 20px;
+            margin-top: 75px;
+            margin-bottom: 50px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-size: 25px;
+            margin-top: 95px;
+        }
+
+        @media screen and (min-width: 1400px){
+            font-size: 30px;
+            margin-top: 110px;
+        }
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-column-gap: 8px;
+        width: 100%;
+
+        @media screen and (min-width: 375px){
+            grid-column-gap: 10px;
+        }
+
+        @media screen and (min-width: 470px){
+            grid-column-gap: 12px;
+        }
+
+        @media screen and (min-width: 760px){
+            grid-column-gap: 17px;
+        }
+
+        @media screen and (min-width: 1020px){
+            grid-column-gap: 23px;
+        }
+        @media screen and (min-width: 1300px){
+            grid-column-gap: 30px;
+        }
+    }
+
+    &__block{
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: #c1c1c1;
+            margin-top: -15px;
+
+            @media screen and (min-width: 760px){
+                height: 5px;
+            }
+
+            @media screen and (min-width: 850px){
+                margin-top: -30px;
+            }
+        }
+        
+        &:hover .drobdown{
+            display: block;
+        }
+    }
+
+    &__hover{
+        position: relative;
+        
+        &:hover .drobdown{
+            display: block;
+        }
+    }
+
+    &__img{
+        width: 100%;
+    }
+}
+
+.drobdown{
+    display: none;
+    
+    &__transparency{
+        position: absolute;
+        width: 100%;
+        height: 89%;
+        background:  linear-gradient(rgba(49, 63, 74, 0.5), rgba(49,63,74,0.5)),;
+
+        @media screen and (min-width: 760px){
+            height: 91%;
+        }
+    }
+
+    &__block{
+        background-color: #313f4a;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    &__title{
+        font: {
+            family: $mainfont;
+            size: 6px;
+            weight: 400;
+        }
+        background-color: #313f4a;
+        color: white;
+
+        @media screen and (min-width: 760px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1020px){
+            font-size: 17px;
+        }
+    }
+
+    &__ul{
+        margin: 0;
+        padding: 5px 0 0 5px;
+        line-height: 5px;
+
+        @media screen and (min-width: 760px){
+            line-height: normal;
+        }
+
+        @media screen and (min-width: 1020px){
+            padding: 15px 0 0 15px;
+        }
+    }
+
+    &__link{
+        font: {
+            family: $mainfont;
+            size: 6px;
+            weight: 300;
+        }
+        color: white;
+
+        @media screen and (min-width: 760px){
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1020px){
+            font-size: 15px;
+        }
+    }
+}
+
+.fife{
+    margin-top: -3px;
+
+    @media screen and (min-width: 470px){
+        margin-top: -6px;
+    }
+}
+
+.six{
+    @media screen and (min-width: 1020px){
+        margin-top: 5px;
+    }
+}
+
+.seven{
+    margin-top: -4px;
+
+    @media screen and (min-width: 470px){
+        margin-top: -7px;
+    }
+}
+
+.eight{
+    margin-top: 3px;
+
+    @media screen and (min-width: 470px){
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width: 1020px){
+        margin-top: 20px;
+    }
+}
+
+.image2{
+    height: 92%;
+
+    @media screen and (min-width: 375px){
+        height: 93%;
+    }
+
+    @media screen and (min-width: 760px){
+        height: 94%;
+    }
+
+    @media screen and (min-width: 1020px){
+        height: 95%;
+    }
+}
+
+.image5{
+    margin-top: -3px;
+    height: 92%;
+
+    @media screen and (min-width: 375px){
+        height: 93%;
+    }
+
+    @media screen and (min-width: 760px){
+        margin-top: -6px;
+        height: 91%;
+    }
+
+    @media screen and (min-width: 1020px){
+        height: 89%;
+    }
+
+    @media screen and (min-width: 1230px){
+        height: 90%;
+    }
+
+    @media screen and (min-width: 1340px){
+        height: 91%;
+    }
+}
