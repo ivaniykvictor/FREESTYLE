@@ -11,15 +11,15 @@ $mainfont: 'Proxima Nova', sans-serif;
         position: relative;
 
         &::before{
-                position: absolute;
-                content: "";
-                background-color: #293239;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                opacity: .8;
-                height: calc(100% - 4px);
+            position: absolute;
+            content: "";
+            background-color: #293239;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .8;
+            height: calc(100% - 4px);
         }
     }
 
