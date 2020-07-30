@@ -1078,11 +1078,33 @@
   position: relative;
 }
 
+@media screen and (min-width: 560px) {
+  .quote__container {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quote__container {
+    padding: 80px 0;
+  }
+}
+
+.quote__block {
+  width: 70%;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .quote__text {
   font-family: "Proxima Nova", sans-serif;
   font-size: 8px;
   color: #b0b6bb;
   text-align: justify;
+  position: relative;
 }
 
 .quote__text::after {
@@ -1128,8 +1150,110 @@
 
 @media screen and (min-width: 1100px) {
   .quote__text {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 40px;
+  }
+}
+
+.quote__left {
+  font-size: 40px;
+  color: #dce3e9;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -25px;
+}
+
+@media screen and (min-width: 430px) {
+  .quote__left {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .quote__left {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .quote__left {
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quote__left {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .quote__left {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .quote__left {
+    margin-left: -50px;
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quote__left {
+    margin-left: -55px;
+    margin-top: -35px;
+  }
+}
+
+.quote__right {
+  font-size: 40px;
+  color: #dce3e9;
+  position: absolute;
+  margin-top: -20px;
+  left: 103%;
+}
+
+@media screen and (min-width: 430px) {
+  .quote__right {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .quote__right {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .quote__right {
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quote__right {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .quote__right {
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .quote__right {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quote__right {
+    margin-top: -55px;
   }
 }
 
