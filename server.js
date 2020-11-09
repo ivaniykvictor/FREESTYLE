@@ -24,7 +24,7 @@ const requestListener = async (req, res) => {
   
       let tgRes;
       try {
-        tgRes = await fetch(`https://api.telegram.org/bot${'1283516768:AAHFFHTdc2bOsk0iM6ffemPmqOyCPO4VaCI'}/sendMessage?chat_id=${'-1001167248578'}&text=${text}`);
+        tgRes = await fetch(`https://api.telegram.org/bot${accessToken}/sendMessage?chat_id=${chatId}&text=${text}`);
         tgRes = await tgRes.json();
         if (tgRes && tgRes.ok) {
           return res.end(JSON.stringify({ ok: true }));
