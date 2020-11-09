@@ -141,8 +141,7 @@ $mainfont: 'Proxima Nova', sans-serif;
         border: solid transparent;
         border-radius: 1px;
         position: relative;
-        left: 100%;
-        transform: translate(-85%);
+        width: 100px;
 
         @media screen and (min-width: 760px){
             font-size: 11px;
@@ -171,10 +170,119 @@ $mainfont: 'Proxima Nova', sans-serif;
             margin-top: -12px;
         }
     }
+
+    &__forma{
+        width: 80%;
+        left: 10%;
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 17px 24px 0 rgba(0, 0, 0, 0.14);
+        z-index: 10;
+        top: 620px;
+        display: none;
+
+        @media screen and (min-width: 375px){
+            top: 670px;
+        }
+
+        @media screen and (min-width: 425px){
+            top: 760px;
+        }
+
+        @media screen and (min-width: 768px){
+            top: 1845px;
+        }
+
+        @media screen and (min-width: 1024px){
+            top: 2550px;
+        }
+
+        @media screen and (min-width: 1440px){
+            top: 3350px;
+        }
+    }
+
+    &__asterisk{
+        color: red;
+        font-size: 10px;
+        position: absolute;
+    }
+
+    &__forma-end{
+        width: 320px;
+        height: 150px;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 17px 24px 0 rgba(0, 0, 0, 0.14);
+        top: 950px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: none;
+
+        @media screen and (min-width: 375px){
+            top: 1000px;
+        }
+
+        @media screen and (min-width: 425px){
+            top: 1100px;
+        }
+
+        @media screen and (min-width: 768px){
+            top: 1800px;
+            width: 500px;
+            height: 200px;
+        }
+
+        @media screen and (min-width: 1024px){
+            top: 2600px;
+        }
+
+        @media screen and (min-width: 1440px){
+            top: 3350px;
+        }
+    }
+
+    &__text-forma{
+        font-family: $mainfont;
+        font-size: 25px;
+        color: #8f8f8f;
+        text-align: center;
+        margin-top: 30px;
+    }
+
 }
 
 .tel{
     padding-top: 10px;
 }
 
+.rule{
+    position: relative;
+    margin-top: 5px;
+}
 
+.block-rule{
+    display: flex;
+    margin-top: 15px;
+}
+
+.active-forma{
+    display: block;
+}
+
+.forma-close{
+    margin-left: 5px;
+
+    i{
+        font-size: 20px;
+        color: grey;
+    }
+}
+
+.button-forma{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+}
