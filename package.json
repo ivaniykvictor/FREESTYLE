@@ -1,0 +1,24 @@
+{
+  "name": "FREESTYLE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivaniykvictor/FREESTYLE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivaniykvictor/FREESTYLE/issues"
+  },
+  "homepage": "https://github.com/ivaniykvictor/FREESTYLE#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
