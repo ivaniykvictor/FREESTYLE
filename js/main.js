@@ -50,7 +50,7 @@
 
 
         let res;
-        try { res = await fetch(`https://api.telegram.org/bot${accessToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
+        try { res = await fetch(`/send?text=${encodeURIComponent(message)}`);
         res = await res.json();
 
         if (res.ok) {
