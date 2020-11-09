@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -110,7 +111,7 @@
     </div>
     <section class="banner">
         <div class="banner__fon">
-            <img src="/image/Picture.png" class="banner__img" alt="fon">
+            <img src="../../image/Picture.png" class="banner__img" alt="fon">
             <div class="banner__container">
                 <h2 class="banner__title">Lorem ipsum</h2>
                 <p class="banner__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur dolores neque totam magnam inventore. Eos fugit minus maxime facilis soluta quasi asperiores tenetur iusto expedita.</p>
@@ -118,7 +119,7 @@
         </div>
     </section>
     <div class="logobar">
-        <img src="/image/Cola-logo.png" class="logobar__img" alt="Coca cola logo">
+        <img src="../image/Cola-logo.png" class="logobar__img" alt="Coca cola logo">
         <img src="/image/DR-logo.png" class="logobar__img" alt="DR logo">
         <img src="/image/Smukfest-logo.png" class="logobar__img" alt="Smukfest logo">
         <img src="/image/Google-logo.png" class="logobar__img" alt="Google logo">
@@ -361,21 +362,68 @@
                 </nav>
             </div>
             <div class="footer__block-submit">
-                <h4 class="footer__title">Submit to our news letter</h4>
-                <p class="footer__text">Submit and get all the info about our worck, new positions and new blog inputs</p>
-                <form action="Name">
-                    <input class="footer__input" id="name" type="text" placeholder="Your Name" required>
-                </form>
-                <form action="Email">
-                    <input class="footer__input-email" id="email" type="email" placeholder="Your E-mail" required>
-                </form>
-                <button class="footer__button" type="submit">Submit</button>
+                <h4 class="footer__title">Join our chat in a telegram</h4>
+                <p class="footer__text">Join and get all the info about our work, new positions and new blog inputs</p>
+                <button class="footer__button" id="button">Join</button>
             </div> 
         </div>
+        <div class="footer__forma" id="forma">
+            <div class="forma-close" id="formaClose">
+                <i class="fas fa-times"></i>
+            </div>
+            <form id="contactsForma">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email 
+                        <span class="footer__asterisk">&#10059;</span>
+                    </label>
+                    <input type="email" name="email" class="form-control" id="inputEmail4" data-role="input" placeholder="email@mail.com"  required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Phone
+                        <span class="footer__asterisk">&#10059;</span>
+                    </label>
+                    <input type="tel" name="phone" class="form-control maskField" id="inputText4" mask="+38 099-999-99-99" placeholder="+38 091-123-45-67" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Name
+                    <span class="footer__asterisk">&#10059;</span>
+                  </label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address </label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="City">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputWhereWork">Where do you work?</label>
+                    <input type="text" class="form-control" id="inputWhereWork" placeholder="The company you work for">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputWhoWork">What is your hobby?</label>
+                    <input type="text" id="inputHobby" class="form-control" placeholder="I'm a DJ">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            <div class="block-rule">
+                <span class="footer__asterisk rule">&#10059;</span>
+                <p>&#160;Required for input</p>
+            </div>
+        </div>
+        <div class="footer__forma-end" id="formaSeeYou">
+            <p class="footer__text-forma">See you in the telegram chat</p>
+            <button class="footer__button button-forma" id="buttonSeeYou">OK</button>
+        </div>
         <div class="footer__copyright">
-            <p class="footer__text ">All rights reserved - Freestyle Freebie 1.00 - Lonas Streit</p>
+            <p class="footer__text">All rights reserved - Freestyle Freebie 1.00 - Lonas Streit</p>
         </div>
     </footer>
 <script src="/js/main.js"></script>
+<script src="/js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
