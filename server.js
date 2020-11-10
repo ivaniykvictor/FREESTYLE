@@ -11,7 +11,7 @@ const requestListener = async (req, res) => {
     const parsedUrl = url.parse(req.url, true);
   
     if (parsedUrl.pathname === '/') {
-      fs.readFile(__dirname + '/index.html' + '/main.css' + '/main.js', 'utf8', (err, text) => {
+      fs.readFile(__dirname + '/index.html' + '../../main.css' + '../../main.js', 'utf8', (err, text) => {
         if (err) {
           console.error(err);
           return res.end(JSON.stringify({ ok: false, description: err.message }));
