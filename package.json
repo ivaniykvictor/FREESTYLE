@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ivaniykvictor/FREESTYLE#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "node-static": "^0.7.11"
   }
 }
